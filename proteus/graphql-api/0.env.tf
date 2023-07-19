@@ -9,6 +9,11 @@ variable "DATABASE_URL" {
   sensitive   = true
 }
 
+variable "NEXTAUTH_SECRET" {
+  description = "Auth secret key for NextAuth.js and JWT"
+  type        = string
+}
+
 variable "NEXTAUTH_URL" {
   description = "Front-end client origin"
   type        = string

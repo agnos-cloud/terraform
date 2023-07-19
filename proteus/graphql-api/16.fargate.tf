@@ -33,6 +33,10 @@ resource "aws_ecs_task_definition" "proteus_graphql_api_task" {
           "value" : "${var.DATABASE_URL}"
         },
         {
+          "name" : "NEXTAUTH_SECRET",
+          "value" : "${var.NEXTAUTH_SECRET}"
+        },
+        {
           "name" : "NEXTAUTH_URL",
           "value" : "${var.NEXTAUTH_URL}"
         },
