@@ -55,6 +55,14 @@ resource "aws_ecs_task_definition" "proteus_graphql_api_task" {
         {
           "name" : "PORT",
           "value" : "${var.PORT}"
+        },
+        {
+          "name" : "STRIPE_PUBLISHABLE_KEY",
+          "value" : "${var.STRIPE_PUBLISHABLE_KEY}"
+        },
+        {
+          "name" : "STRIPE_SECRET_KEY",
+          "value" : "${var.STRIPE_SECRET_KEY}"
         }
       ],
       "portMappings" : [

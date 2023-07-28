@@ -41,3 +41,15 @@ variable "PORT" {
   description = "The port on which the container listens"
   type        = string
 }
+
+variable "STRIPE_PUBLISHABLE_KEY" {
+  description = "Stripe publishable key"
+  type        = string
+  sensitive   = true
+}
+
+variable "STRIPE_SECRET_KEY" {
+  description = "Stripe secret key"
+  type        = string
+  sensitive   = true
+}
